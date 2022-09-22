@@ -1,23 +1,9 @@
-def escribir(fichero, datos):
-    f = open(fichero,'w')
-    
-    for linea in datos:
-        if not linea.endswith('\n'):
-            linea += '\n'
-            
-        f.write(linea)
-        
-    f.close()
-    
-list = [
-    'primera linea',
-    'segunda linea',
-    'tercera linea',
-    'cuarta linea',
-    'quinta linea',
-    'sexta linea',
-    'octaba linea',
-    'novena linea',
-]
+f = open('ejercicio8-1.txt', 'w')
+f.write('He creado la primera linea de mi archivo \n')
+f.close()
 
-escribir('ejercicio8.txt', list)
+f = open('ejercicio8-1.txt', 'a')
+f.write("he agregado la segunda linea de texto")
+f.close()
+
+print(f.read)
