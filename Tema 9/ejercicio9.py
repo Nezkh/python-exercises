@@ -1,9 +1,7 @@
-f = open('ejercicio8-1.txt', 'w')
-f.write('He creado la primera linea de mi archivo \n')
-f.close()
+ipais = input("Ingrese una cantidad de paises: ")
 
-f = open('ejercicio8-1.txt', 'a')
-f.write("he agregado la segunda linea de texto")
-f.close()
+paises = []
+paises.append(ipais)
 
-print(f.read)
+cadena = ",".join(paises)
+print(sorted(list(set(cadena.split(",")))))
