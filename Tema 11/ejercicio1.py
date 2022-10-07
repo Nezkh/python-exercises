@@ -31,9 +31,9 @@ def insertData(id, nombre, apellido):
 def readData():
     conn = sql.connect("ejercicio1.db")
     cursor = conn.cursor()
-    instruction = f"SELECT nombre FROM sqlite_master"
-    cursor.execute(instruction)('nombre')
-    datos = cursor.fetchone()
+    instruction = f"SELECT * FROM alumnos WHERE nombre = 'Francisco'"
+    cursor.execute(instruction)
+    datos = cursor.fetchall()
     conn.commit()
     conn.close()
     print(datos)
