@@ -1,0 +1,14 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h1>Peliculas de Todos Los Tiempos</h1>
+
+<p>A continuación se mostrarán los registros del cine que tenemos en nuestra BD:</p>
+
+<ul>
+    <li>Directores Registrados: {{ num_director }}</li>
+    <li>Personas de reparto: {{ num_cast }}</li>
+    <li>Cantidad de películas: {{ num_film }}</li>
+</ul>
+
+{% endblock %}
